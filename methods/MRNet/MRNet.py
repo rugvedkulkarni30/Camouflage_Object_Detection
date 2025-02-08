@@ -14,10 +14,10 @@ import sys
 # sys.path.append(r'/home/um202273190/zxy/MRNet1/MRNet/methods/MRNet')
 sys.path.append(r'D:\pythonCode\conpare\reTrain\xxx1\MRNet\methods\MRNet')
 import numpy as np
-from mobilenetv3 import MobileNetV3LargeEncoder
-from resnet import ResNet50Encoder
-from lraspp import LRASPP
-from decoder import RecurrentDecoder, Projection
+from .mobilenetv3 import MobileNetV3LargeEncoder
+from .resnet import ResNet50Encoder
+from .lraspp import LRASPP
+from .decoder import RecurrentDecoder, Projection
 
 class ASPP(nn.Module):
     def __init__(self, in_dim, out_dim):
